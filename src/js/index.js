@@ -3,7 +3,7 @@ const cartoes = document.querySelectorAll('.cartao');
 let cartaoAtual = 0;
 
 cartoes.forEach(cartao => {
-    cartao.addEventListener('click', function () {
+    cartao.addEventListener('click', function() {
         const cartaVirada = cartao.querySelector('.carta-virada');
 
         cartao.classList.toggle('virar');
@@ -12,8 +12,8 @@ cartoes.forEach(cartao => {
         const descricao = cartao.querySelector('descricao');
         descricao.classList.toggle('esconder');
         
-    })
-})
+    });
+});
 
 btnAvancar.addEventListener('click', function () {
 
@@ -26,7 +26,7 @@ btnAvancar.addEventListener('click', function () {
 
     cartaoAtual++;
     cartoes[cartaoAtual].classList.add('selecionado')
-})
+});
 
 const btnVoltar = document.getElementById('btn-voltar');
 
@@ -39,5 +39,5 @@ btnVoltar.addEventListener('click', function () {
     cartaoSelecionado.classList.remove('selecionado');
 
     cartaoAtual--;
-    cartoes[cartaoAtual].classList.add('selecionado')
-})
+    cartoes[cartaoAtual].classList.add('selecionado');
+});
