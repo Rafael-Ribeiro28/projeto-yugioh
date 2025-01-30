@@ -9,7 +9,7 @@ cartoes.forEach(cartao => {
         cartao.classList.toggle('virar');
         cartaVirada.classList.toggle('mostrar-fundo-carta');
 
-        const descricao = cartao.querySelector('descricao');
+        const descricao = cartao.querySelector('.descricao');
         descricao.classList.toggle('esconder');
         
     });
